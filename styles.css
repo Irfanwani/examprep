@@ -1,0 +1,81 @@
+marquee {
+    color: orangered;
+    
+}
+
+body {
+    background-color: cyan;
+}
+
+#loginform {
+    padding: 30px;
+    text-align: center;
+    box-shadow: 5px 6px 10px grey;
+    width: 40%;
+    align-self: center;
+    border-radius: 20px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: lightslategrey;
+}
+
+input {
+    width: 80%;
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    border: 2px solid aqua;
+    outline: none;
+    padding: 5px;
+}
+
+input:focus {
+    width: 90%;
+    border: 2px solid pink;
+    transition: 0.25s;
+    text-decoration: none;
+
+}
+
+button {
+    background-color: aqua;
+    padding: 5px;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid cyan;
+    box-shadow: 2px 2px 10px black;
+    text-shadow: 5px 5px 6px black;
+}
+
+button:hover {
+    background-color: pink;
+    box-shadow: 2px 2px 10px cyan;
+    transition: 0.25s;
+
+}
+
+h3 {
+    text-shadow: 5px 5px 10px;
+}
+
+.card {
+    margin: 10px auto 10px auto;
+    width: 200px;
+    height: 200px;
+    box-shadow: 1px 5px 50px grey;
+    border-radius: 20px;
+    background-color: grey;
+}
+
+.card:hover {
+    width: 250px;
+    height: 250px;
+    transition: 0.25s;
+}
+
+
+img {
+    border-radius: 20px;
+}
+

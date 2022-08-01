@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exam prep</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <marquee behavior="alternate" direction="right">Welcome to The Family!!!</marquee>
+
+    <div id="loginform">
+        <h3>Login</h3>
+        <form action="family.html" metod="post">
+            <input type="text" placeholder="Your Name Please..." minlength="3" id="username">
+            <input type="password" minlength="6" placeholder="password" id="password">
+            <button type="button" onclick="login()">Enter Family</button>
+        </form>
+    </div>
+    <script>
+        const login = () => {
+
+            const obj = {
+                "Irfan wani": '12345',
+                "Inbisat Yousuf": '12345',
+                "Saieed Shahid": '12345',
+            "Mohammad Imran": '12345',
+            "Waqar Ahmad": '12345'
+        }
+        
+        var username = document.getElementById('username').value;
+        var password = document.getElementById('password').value
+
+        console.log(username, password)
+        if (obj[username]) {
+
+            if (obj[username] == password) {
+                window.location.href = 'family.html'
+            }
+            else {
+                alert('wrong password')
+            }
+        }else {
+            alert('Family member nhi hai tu.Chal nikal.');
+        }
+    }
+    </script>
+</body>
+
+</html>
